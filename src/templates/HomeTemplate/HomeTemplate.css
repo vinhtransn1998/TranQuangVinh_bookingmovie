@@ -1,0 +1,23 @@
+.bg__nav {
+    background-color: rgba(19, 12, 2, 0.836);
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.color {
+    color: white;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logo__after {
+    font-size: 20px;
+}
+
+.HomeTemplate__float {
+    margin-left: 70%;
+}

@@ -21,24 +21,28 @@ const Home = (props) => {
             </div>
         })
     }
-    
+
     useEffect(() => {
         qlPhimService.layDanhSachPhim().then(result => {
             console.log(result.data);
             setDanhSachPhim(result.data);
-        }).catch(errors => { 
+        }).catch(errors => {
             console.log(errors.response.data);
         })
-    }, []); 
+    }, []);
     return (
-        <div className="container">
-            <Carousel/>
-            <div className="display-4 home__tittle mg__t10">- Phim mới nhất -</div>
-            <div className="row">
-                {renderDanhSachPhim()}
+        <div>
+            <div className="container">
+                <Carousel />
+                <div className="display-4 home__tittle mg__t10">- Phim mới nhất -</div>
+                <div className="row">
+                    {renderDanhSachPhim()}
+                </div>
+
             </div>
-            
+            <Footer />
         </div>
+
     )
 }
 

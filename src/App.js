@@ -7,7 +7,7 @@ import { AdminTemplate } from './templates/AdminTemplate/AdminTemplate'
 import Register from './pages/Register'
 import MovieDetail from './pages/MovieDetail'
 import Showtime from './pages/Showtime'
-import Footer from './templates/FooterTemplate/FooterTemplate'
+
 
 export default class App extends Component {
   render() {
@@ -25,7 +25,6 @@ export default class App extends Component {
            
             <AdminTemplate exact path="/admin" component={Home} />
           </Switch>
-          <Footer/>
         </Fragment>
       </BrowserRouter>
     )

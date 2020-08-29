@@ -22,7 +22,6 @@ export default function Showtime(props) {
     const renderDanhSachGhe = () => {
 
         let { danhSachGhe } = thongTinPhongVe;
-        console.log(danhSachGhe)
         return danhSachGhe?.map((ghe, index) => {
             return <Fragment key={index}>
                 {renderGhe(ghe.daDat, ghe)}
@@ -98,7 +97,7 @@ export default function Showtime(props) {
 
 
     const renderThongTinGheDangDat = () => {
-        return <div>
+        return <div style={{color:"white"}}>
             {danhSachGheDangDat.map((gheDangDat,index)=>{
                return <span key={index}> Ghế {gheDangDat.tenGhe} </span>
             })} - {danhSachGheDangDat.reduce((tongTien,gheDangDat,index)=>{
@@ -120,7 +119,7 @@ export default function Showtime(props) {
                     <div className="trapezoid mb-5 mt-5"></div>
                     {renderDanhSachGhe()}
                 </div>
-                <div className="col-6">
+                <div className=" card col-6" style={{marginTop:"13%",height:"10%"}}>
                     {renderThongTinPhim()}
                 </div>
             </div>

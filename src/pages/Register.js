@@ -72,37 +72,37 @@ export default class Register extends Component {
             <form className="container" onSubmit={this.handleSubmit}>
                 <h3 className="display-4">Đăng ký</h3>
                 <div className="form-group">
-                    <span>Họ tên</span>
+                    <span style={{color:"white"}}>Họ tên</span>
                     <input className="form-control" name="hoTen" onChange={this.handleChangeInput} />
                     <span className="text-danger">{this.state.errors.hoTen}</span>
                 </div>
                 <div className="form-group">
-                    <span>Tài khoản</span>
+                    <span style={{color:"white"}}>Tài khoản</span>
                     <input className="form-control" name="taiKhoan" onChange={this.handleChangeInput} />
                     <span className="text-danger">{this.state.errors.taiKhoan}</span>
 
                 </div>
 
                 <div className="form-group">
-                    <span>Mật khẩu</span>
+                    <span style={{color:"white"}}>Mật khẩu</span>
                     <input type="password" className="form-control" name="matKhau" onChange={this.handleChangeInput} />
                     <span className="text-danger">{this.state.errors.matKhau}</span>
 
                 </div>
                 <div className="form-group">
-                    <span>Email</span>
+                    <span style={{color:"white"}}>Email</span>
                     <input className="form-control" name="email" onChange={this.handleChangeInput} />
                     <span className="text-danger">{this.state.errors.email}</span>
 
                 </div>
                 <div className="form-group">
-                    <span>Số điện thoại</span>
+                    <span style={{color:"white"}}>Số điện thoại</span>
                     <input className="form-control" name="soDienThoai" onChange={this.handleChangeInput} />
                     <span className="text-danger">{this.state.errors.soDienThoai}</span>
 
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="btn btn-success">Đăng ký</button>
+                    <button style={{color:"white"}} type="submit" className="btn btn-success">Đăng ký</button>
                 </div>
             </form>
         )
